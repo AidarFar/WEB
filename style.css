@@ -1,0 +1,193 @@
+.canvas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 600px;
+    background-color: cornflowerblue;
+}
+
+.trunk,
+.branch {
+    border-radius: 25px;
+    background: linear-gradient(to right, #7f3333, #4d2020);
+}
+
+.trunk {
+    position: relative;
+
+    width: 10px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.branch {
+    position: absolute;
+
+    width: 5px;
+
+    transform-origin: bottom center;
+}
+
+.branch:nth-child(even) {
+    transform: rotate(60deg);
+}
+
+.branch:nth-child(odd) {
+    transform: rotate(-60deg);
+}
+
+.branch:nth-child(1) {
+    top: 180px;
+    height: 200px;
+}
+
+.branch:nth-child(2) {
+    top: 160px;
+    height: 150px;
+}
+
+.branch:nth-child(3) {
+    top: 120px;
+    height: 100px;
+}
+
+.leaf {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 75% 0 75% 0;
+    background: linear-gradient(to right, greenyellow, yellow);
+}
+
+
+@keyframes leaf-odd-grow {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.leaf:nth-child(odd) {
+    left: 100%;
+    transform-origin: 0% 100%;
+    animation-name: leaf-odd-grow;
+    animation-duration: 4s;
+    animation-fill-mode: both;
+}
+
+@keyframes leaf-even-grow {
+    0% {
+        transform: rotate(-90deg) scale(0);
+    }
+    100% {
+        transform: rotate(-90deg) scale(1);
+    }
+}
+
+.leaf:nth-child(even) {
+    left: -150%;
+    transform-origin: 50% 100%;
+    animation-name: leaf-even-grow;
+    animation-duration: 4s;
+    animation-fill-mode: both;
+}
+
+.leaf:nth-child(1) {
+    top: 5px;
+    animation-delay: 3.5s;
+}
+
+.leaf:nth-child(2) {
+    top: 20px;
+    animation-delay: 3s;
+}
+
+.leaf:nth-child(3) {
+    top: 50px;
+    animation-delay: 2.5s;
+}
+
+@keyframes branch-odd-grow {
+    0% {
+        transform: rotate(60deg) scale(0);
+    }
+    100% {
+        transform: rotate(60deg) scale(1);
+    }
+}
+
+@keyframes branch-even-grow {
+    0% {
+        transform: rotate(-60deg) scale(0);
+    }
+    100% {
+        transform: rotate(-60deg) scale(1);
+    }
+}
+
+.branch:nth-child(odd) {
+    left: 100%;
+    transform-origin: 0% 100%;
+    animation-name: branch-odd-grow;
+    animation-duration: 4s;
+    animation-fill-mode: both;
+}
+
+.branch:nth-child(even) {
+    left: 100%;
+    transform-origin: 0% 100%;
+    animation-name: branch-even-grow;
+    animation-duration: 4s;
+    animation-fill-mode: both;
+}
+
+.bulldozer {
+    position: absolute;
+    left: 200px;
+    animation: move 6s;
+    animation-fill-mode: both;
+}
+
+@keyframes move {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(200px, 0, 0);
+    }
+}
+
+.explosion {
+    position: absolute;
+    animation-name: appear;
+    animation-delay: 6s;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+
+}
+
+@keyframes appear {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.tree{
+    animation: dis 0.01s;
+    animation-delay: 6.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes dis {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}

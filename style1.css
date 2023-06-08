@@ -1,0 +1,184 @@
+.desktop-1
+{
+    position:absolute;
+    background-color:#ffffff;
+    height:1024px;
+    width:1440px;
+    padding:0px;
+    display:flex;
+    flex-direction:column;
+    flex-wrap:nowrap;
+    align-items:center;
+    justify-content:center;
+    background-size: cover;
+}
+.page-31
+{
+    height:1024px;
+    width:720px;
+    position:absolute;
+    top:0px;
+    left:-1px;
+
+}
+.итальянскийресторан
+{
+    color:#000000;
+    text-align:left;
+    vertical-align:text-top;
+    font-size:50px;
+    font-family:Roboto;
+    align-self:flex-start;
+    left:811px;
+    top:426px;
+    position:absolute;
+    line-height:auto;
+    border-style:hidden;
+    outline:none;
+    width:541px;
+    display:flex;
+}
+.ресторандлявсейсемьивцентре
+{
+    color:#000000;
+    text-align:left;
+    vertical-align:text-top;
+    font-size:25px;
+    font-family:Roboto;
+    align-self:flex-start;
+    left:798px;
+    top:534px;
+    position:absolute;
+    line-height:auto;
+    border-style:hidden;
+    outline:none;
+    width:566px;
+    display:flex;
+}
+.rectangle2
+{
+    background-color:#d63838;
+    height:104px;
+    width:219px;
+    border:1px solid #000000;
+    top:672px;
+    left:1089px;
+    position:absolute;
+}
+.rectangle3
+{
+    background-color:#d9d9d9;
+    height:104px;
+    width:219px;
+    filter:drop-shadow(0px 4px 4px rgba(0,0,0,0.25));
+    border:1px solid #000000;
+    top:672px;
+    left:850px;
+    position:absolute;
+}
+.меню
+{
+    color:#000000;
+    text-align:left;
+    vertical-align:text-top;
+    font-size:35px;
+    font-family:Roboto;
+    align-self:flex-start;
+    left:910px;
+    top:704px;
+    position:absolute;
+    line-height:auto;
+    border-style:hidden;
+    outline:none;
+    width:98px;
+    display:flex;
+}
+.забронироватьстол
+{
+    color:#ffffff;
+    text-align:center;
+    vertical-align:text-top;
+    font-size:25px;
+    font-family:Roboto;
+    align-self:flex-start;
+    left:1097px;
+    top:695px;
+    position:absolute;
+    line-height:auto;
+    border-style:hidden;
+    outline:none;
+    width:202px;
+    display:flex;
+}
+.расположение
+{
+    color:#000000;
+    text-align:left;
+    vertical-align:text-top;
+    font-size:25px;
+    font-family:Roboto;
+    align-self:flex-start;
+    left:903px;
+    top:48px;
+    position:absolute;
+    line-height:auto;
+    border-style:hidden;
+    outline:none;
+    width:178px;
+    display:flex;
+}
+.онас
+{
+    color:#000000;
+    text-align:center;
+    vertical-align:text-top;
+    font-size:25px;
+    font-family:Roboto;
+    align-self:flex-start;
+    left:1133px;
+    top:48px;
+    position:absolute;
+    line-height:auto;
+    border-style:hidden;
+    outline:none;
+    width:65px;
+    display:flex;
+}
+.контакты
+{
+    color:#000000;
+    text-align:center;
+    vertical-align:text-top;
+    font-size:25px;
+    font-family:Roboto;
+    align-self:flex-start;
+    left:1250px;
+    top:48px;
+    position:absolute;
+    line-height:auto;
+    border-style:hidden;
+    outline:none;
+    width:117px;
+    display:flex;
+}
+.flex-container {
+
+    display: flex;
+
+    justify-content: flex-start;
+    align-items: stretch;
+    /* flex-flow: row nowrap; */
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: stretch;
+
+    height: 100%;
+    padding: 15px;
+
+}
+
+.flex-container > div {
+
+    border-radius: 5px;
+    padding: 8px;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</head>
+<body>
+<h1> Лабораторная работа 4</h1>
+<h2>2.</h2>
+<a>name:</a>
+<a id="c1"></a><br>
+<a>address:</a>
+<a id="c2"></a><br>
+<a>email:</a>
+<a id="c3"></a><br>
+<h2>3.</h2>
+<a id="o1"></a><br>
+<a id="o2"></a><br>
+<h2>4.</h2>
+
+<u id="u1"></u>
+<h2>5.</h2>
+<a id="s1"></a>
+<script>
+    let User = {
+        name: "Джон",
+        age: 30
+    };
+    User.sayHi = function() {
+        alert("Привет!");
+    };
+    User.sayHi();
+    let Customer = {
+        name: "Райан",
+        address: "K 1",
+        email: "gosling@gmail.com",
+        phone: "88005553535",
+        nOrder: 1
+    }
+    document.getElementById("c1").innerHTML = Customer.name;
+    document.getElementById("c2").innerHTML = Customer.address;
+    document.getElementById("c3").innerHTML = Customer.email;
+</script>
+<script>
+    // создаем объекты пользователей
+
+    let user1 = {
+        name: "Иван",
+        email: "ivan@example.com",
+        age: 25
+    };
+
+    let user2 = {
+        name: "Анна",
+        email: "anna@example.com",
+        age: 30
+    };
+    let restaurant1 = {
+        name: "Ресторан 1",
+        rating: 4.5,
+        menu: ["Пицца", "Паста", "Салат"]
+    };
+
+    let restaurant2 = {
+        name: "Ресторан 2",
+        rating: 3.8,
+        menu: ["Стейк", "Рыба", "Картофель фри"]
+    };
+
+    let order1 = {
+        user: user1,
+        restaurant: restaurant1,
+        items: ["Пицца", "Салат"],
+        price: 1500
+    };
+
+    let order2 = {
+        user: user2,
+        restaurant: restaurant2,
+        items: ["Стейк", "Картофель фри"],
+        price: 2500
+    };
+
+    document.getElementById("o1").innerHTML = order1.user.name + " заказал " + order1.items + " в ресторане " + order1.restaurant.name;
+    document.getElementById("o2").innerHTML = order2.user.name + " заказал " + order2.items + " в ресторане " + order2.restaurant.name;
+
+
+</script>
+<script>
+    function User3(name) {
+        this.name = name;
+    }
+    let names = ["Айдар", "Артем", "Дмитрий", "Андрей", "Кирилл"];
+    let users = names.map(name => new User3(name));
+    const html = users.map((item) => `<li>${item.name}</li>`).join('');
+    document.getElementById("u1").innerHTML = html;
+</script>
+<script>
+    function Student(name, age, group) {
+        this.name = name;
+        this.age = age;
+        this.group = group;
+        this.getInfo = function() {
+            return (`Студент ${this.name}, возраст ${this.age} лет, группа: ${this.group}`);
+        }
+    }
+
+    let student1 = new Student("Айдар", 19, "ПИ21-4");
+    document.getElementById("s1").innerHTML = student1.getInfo();
+</script>
+</body>
+</html>
